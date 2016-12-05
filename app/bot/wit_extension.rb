@@ -13,7 +13,7 @@ class WitExtension
 				recipient = @conversation.user.recipient
 				@adapter.send_response(recipient: recipient, response: response)
 
-				puts "😊 [LOG] Sending '" + response['text'] + "' to: " + recipient
+				puts "😊 [LOG] Sending '" + response['text'] + "' to: " + recipient['id']
 			},
 			getForecast: -> (request) {
 				context, entities = set_context(request)

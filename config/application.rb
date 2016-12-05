@@ -24,5 +24,7 @@ module BotBoilerplate
     config.paths.add File.join("app", "bot"), glob: File.join("**","*.rb")
     config.autoload_paths += Dir[Rails.root.join("app", "bot", "*")]
 
+    # Workers
+    config.active_job.queue_adapter = :delayed_job
   end
 end

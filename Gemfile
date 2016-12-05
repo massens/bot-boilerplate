@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'wit'
 gem 'telegram-bot-ruby'
+gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
