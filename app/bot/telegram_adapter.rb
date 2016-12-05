@@ -5,8 +5,6 @@ require "telegram/bot"
 # Production webhook
 # https://api.telegram.org/bot164573002:AAHx7mTRdwvcSPOnI3QcdYGcMRzhVZ_zyqw/setWebhook?url=https://jamieanswers.herokuapp.com/webhooks/telegram_1e937d775c61400884e1357aef6e0adb
 
-
-
 class TelegramAdapter
 	include Singleton
 
