@@ -4,7 +4,7 @@ class TelegramController < ApplicationController
   def callback
     user
 
-    msg = Message.create(text: text, sender: sender)
+    # msg = Message.create(text: text, sender: sender)
 
     # TelegramJob.perform_later msg
     render nothing: true, head: :ok
