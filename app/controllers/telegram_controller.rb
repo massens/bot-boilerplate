@@ -2,10 +2,10 @@ class TelegramController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def callback
-    
     msg = user.messages.create(body: text)
 
-    # TelegramJob.perform_later msg
+    MessageJob.perform_later msg
+
     render body: nil, head: :ok
   end
 
