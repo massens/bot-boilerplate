@@ -9,7 +9,7 @@ class TelegramAdapter
 	include Singleton
 
 	def initialize
-		@bot = ::Telegram::Bot::Api.new('286278199:AAFtI8nxS_qZydTRHYcbPVHrVVb9G_WeZtQ')
+		@bot = ::Telegram::Bot::Api.new(ENV["TELEGRAM_TOKEN"])
 	end
 	# Send response
 	def send_response(recipient:, response:)
