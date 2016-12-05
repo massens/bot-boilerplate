@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-	validates_uniqueness_of :sender_id
+	validates_inclusion_of :client, :in => ["messenger", "telegram"], allow_nil: true
 
 end
